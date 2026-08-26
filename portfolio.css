@@ -1,0 +1,341 @@
+body {
+
+
+    background-color: black;
+
+    color: white;
+
+    margin:0;
+
+    font-family: Arial, sans-serif;
+
+
+}
+
+
+
+/* Header */
+
+
+header {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    padding:25px 60px;
+
+
+}
+
+
+
+.logo {
+
+
+    font-size:30px;
+
+    font-weight:bold;
+
+
+}
+
+
+
+nav {
+
+
+    display:flex;
+
+    gap:30px;
+
+
+}
+
+
+
+nav a {
+
+
+    color:white;
+
+    text-decoration:none;
+
+
+}
+
+
+
+
+
+/* Hero */
+
+
+.hero {
+
+
+    text-align:center;
+
+
+    margin-top:80px;
+
+
+}
+
+
+
+.hero h1 {
+
+
+    font-size:55px;
+
+
+}
+
+
+
+.hero p {
+
+
+    color:#aaa;
+
+    font-size:20px;
+
+
+}
+
+
+
+button {
+
+
+    margin-top:20px;
+
+
+    padding:12px 30px;
+
+
+    background:white;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+/* Gallery */
+
+
+.gallery {
+
+
+    display:flex;
+
+
+    flex-wrap:wrap;
+
+
+    justify-content:center;
+
+
+    gap:25px;
+
+
+    margin-top:80px;
+
+
+}
+
+
+
+
+.card {
+
+
+    width:300px;
+
+
+    height:250px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.card img {
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    transition:0.5s;
+
+
+}
+
+
+
+
+
+
+/* Grey layer */
+
+
+.overlay {
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+
+    background-color:gray;
+
+
+    opacity:0;
+
+
+    
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:30px;
+
+
+    transition:0.5s;
+
+
+}
+
+
+
+
+
+/* Hover */
+
+
+.card:hover img {
+
+
+    transform:scale(1.1);
+
+
+}
+
+
+
+.card:hover .overlay {
+
+
+    opacity:0.7;
+
+
+}
+
+
+
+
+
+
+/* About */
+
+
+.about {
+
+
+    text-align:center;
+
+
+    margin:100px;
+
+
+}
+
+
+
+.about p {
+
+
+    color:#aaa;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer {
+
+
+    background:#111;
+
+
+    text-align:center;
+
+
+    padding:30px;
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+footer p {
+
+
+    color:gray;
+
+
+}
