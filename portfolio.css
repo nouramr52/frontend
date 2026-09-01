@@ -1,341 +1,438 @@
+/* =========================
+   GENERAL
+========================= */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-
-
+    margin: 0;
     background-color: black;
-
     color: white;
-
-    margin:0;
-
     font-family: Arial, sans-serif;
-
-
 }
 
 
 
-/* Header */
+/* =========================
+   NAVBAR
+========================= */
 
 
-header {
+.navbar {
+    background-color: black;
+}
 
 
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-
-    padding:25px 60px;
+.logo-text {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
 
 
+.nav-link {
+    color: #999;
+    font-size: 15px;
+}
+
+
+.nav-link:hover {
+    color: white;
+}
+
+
+.nav-link.active {
+    color: white !important;
+}
+
+
+.social-icons a {
+    color: #aaa;
+    font-size: 18px;
+}
+
+
+.social-icons a:hover {
+    color: white;
 }
 
 
 
-.logo {
-
-
-    font-size:30px;
-
-    font-weight:bold;
-
-
-}
-
-
-
-nav {
-
-
-    display:flex;
-
-    gap:30px;
-
-
-}
-
-
-
-nav a {
-
-
-    color:white;
-
-    text-decoration:none;
-
-
-}
-
-
-
-
-
-/* Hero */
+/* =========================
+   HERO
+========================= */
 
 
 .hero {
-
-
-    text-align:center;
-
-
-    margin-top:80px;
-
-
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
-
 
 
 .hero h1 {
-
-
-    font-size:55px;
-
-
+    font-family: Georgia, serif;
+    font-size: 46px;
+    font-weight: bold;
 }
 
+
+.hero h1 span {
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero h1 span::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: 4px;
+
+    width: 100%;
+    height: 10px;
+
+    background-color: #27a776;
+
+    z-index: -1;
+}
 
 
 .hero p {
+    color: #aaa;
+    font-size: 18px;
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
 
 
-    color:#aaa;
+.hire-button {
+    background-color: #27a776;
 
-    font-size:20px;
+    color: white;
+
+    padding: 14px 40px;
+
+    font-size: 14px;
+}
 
 
+.hire-button:hover {
+    background-color: #209768;
+
+    color: white;
 }
 
 
 
-button {
+/* =========================
+   GALLERY
+========================= */
 
 
-    margin-top:20px;
+.gallery-section {
+    padding-bottom: 70px;
+}
 
 
-    padding:12px 30px;
+.gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
 
 
-    background:white;
+.gallery-item img {
+    width: 100%;
 
+    height: 290px;
 
-    border:none;
+    object-fit: cover;
 
-
-    cursor:pointer;
-
-
+    transition: 0.3s;
 }
 
 
 
+/* dark effect when mouse is over image */
+
+.gallery-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
 
 
+.gallery-overlay i {
+    color: white;
 
-/* Gallery */
-
-
-.gallery {
-
-
-    display:flex;
+    font-size: 28px;
+}
 
 
-    flex-wrap:wrap;
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
 
 
-    justify-content:center;
-
-
-    gap:25px;
-
-
-    margin-top:80px;
-
-
+.gallery-item:hover img {
+    transform: scale(1.05);
 }
 
 
 
-
-.card {
-
-
-    width:300px;
-
-
-    height:250px;
-
-
-    position:relative;
-
-
-    overflow:hidden;
-
-
-}
-
-
-
-.card img {
-
-
-    width:100%;
-
-
-    height:100%;
-
-
-    object-fit:cover;
-
-
-    transition:0.5s;
-
-
-}
-
-
-
-
-
-
-/* Grey layer */
-
-
-.overlay {
-
-
-    position:absolute;
-
-
-    top:0;
-
-
-    left:0;
-
-
-    width:100%;
-
-
-    height:100%;
-
-
-
-    background-color:gray;
-
-
-    opacity:0;
-
-
-    
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    align-items:center;
-
-
-    font-size:30px;
-
-
-    transition:0.5s;
-
-
-}
-
-
-
-
-
-/* Hover */
-
-
-.card:hover img {
-
-
-    transform:scale(1.1);
-
-
-}
-
-
-
-.card:hover .overlay {
-
-
-    opacity:0.7;
-
-
-}
-
-
-
-
-
-
-/* About */
-
-
-.about {
-
-
-    text-align:center;
-
-
-    margin:100px;
-
-
-}
-
-
-
-.about p {
-
-
-    color:#aaa;
-
-
-    font-size:18px;
-
-
-}
-
-
-
-
-
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 
 
 footer {
+    background-color: #111;
+
+    border-top: 1px solid #333;
+
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
 
 
-    background:#111;
+footer p {
+    margin-bottom: 10px;
+}
 
 
-    text-align:center;
+.footer-social a {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid #777;
+
+    border-radius: 50%;
+
+    color: #aaa;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
 
 
-    padding:30px;
+.footer-social a:hover {
+    color: white;
 
-
-    margin-top:50px;
-
-
+    border-color: white;
 }
 
 
 
-footer p {
+/* =========================
+   MOBILE
+========================= */
 
 
-    color:gray;
+@media (max-width: 768px) {
+
+    .hero {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 
 
+    .hero h1 {
+        font-size: 34px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+}
+
+/* =========================
+   ABOUT PAGE HEADER
+========================= */
+
+
+.about-header {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+
+.about-header h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+}
+
+
+.about-description {
+    max-width: 850px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+
+.breadcrumb-section {
+    background-color: #1a1a1a;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+
+/* =========================
+   ABOUT INFO
+========================= */
+
+
+.about-info {
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+
+.about-photo {
+    height: 600px;
+
+    object-fit: cover;
+}
+
+
+.about-title {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+.about-info p {
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+
+.testimonials-section {
+    padding-top: 70px;
+
+    padding-bottom: 90px;
+}
+
+
+.testimonial-small-title {
+    color: #aaa;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+}
+
+
+.testimonial-title {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+}
+
+
+.testimonial-card {
+    background-color: #1b1b1b;
+
+    padding: 40px 35px;
+
+    min-height: 430px;
+}
+
+
+.stars {
+    color: #ffc107;
+
+    font-size: 20px;
+}
+
+
+.testimonial-card p {
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+.testimonial-photo {
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-top: 15px;
+}
+
+
+.testimonial-card h4 {
+    font-family: Georgia, serif;
+
+    font-weight: bold;
+}
+
+
+.testimonial-job {
+    color: #aaa;
 }

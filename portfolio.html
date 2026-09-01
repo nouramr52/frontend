@@ -1,13 +1,38 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>PhotoFolio</title>
 
-    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    >
+
+
+    <!-- Our CSS -->
+    <link
+        rel="stylesheet"
+        href="portfolio.css"
+    >
 
 </head>
 
@@ -15,234 +40,500 @@
 <body>
 
 
-<!-- Header -->
+    <!-- ================= NAVBAR ================= -->
 
-<header>
+    <nav class="navbar navbar-expand-lg navbar-dark py-4">
 
-
-    <div class="logo">
-
-        PhotoFolio
-
-    </div>
+        <div class="container-fluid px-4">
 
 
+            <!-- Logo -->
 
-    <nav>
+            <a
+                class="navbar-brand d-flex align-items-center gap-2"
+                href="#"
+            >
 
-        <a href="#">Home</a>
+                <i class="bi bi-camera text-success fs-2"></i>
 
-        <a href="#">Gallery</a>
+                <span class="logo-text">
+                    PhotoFolio
+                </span>
 
-        <a href="#">About</a>
+            </a>
 
-        <a href="#">Contact</a>
 
+
+            <!-- Mobile Button -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+
+            <!-- Navbar Links -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavbar"
+            >
+
+
+                <ul class="navbar-nav mx-auto gap-lg-3">
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="#home"
+                        >
+                            HOME
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#about"
+                        >
+                            ABOUT
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#gallery"
+                        >
+                            GALLERY
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#services"
+                        >
+                            SERVICES
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#contact"
+                        >
+                            CONTACT
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Social Icons -->
+
+                <div class="social-icons d-flex gap-3">
+
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
 
     </nav>
 
 
-</header>
+
+    <!-- ================= HERO ================= -->
+
+    <section
+        id="home"
+        class="hero"
+    >
+
+        <div class="container text-center">
+
+
+            <h1>
+
+                I'm
+
+                <span>
+                    Jenny Wilson
+                </span>
+
+                a Professional
+
+                <br>
+
+                Photographer from New York City
+
+            </h1>
 
 
 
+            <p>
 
+                Blanditiis praesentium aliquam illum tempore
+                incidunt debitis dolorem magni
 
-<!-- Hero Section -->
+                <br class="d-none d-md-block">
 
-<section class="hero">
+                est deserunt sed qui libero. Qui voluptas amet.
 
-
-    <h1>
-        Capturing Moments
-    </h1>
-
-
-    <p>
-        I am a professional photographer creating beautiful
-        memories through my lens.
-    </p>
-
-
-    <button>
-        View Gallery
-    </button>
-
-
-</section>
+            </p>
 
 
 
+            <a
+                href="#contact"
+                class="btn hire-button"
+            >
+
+                AVAILABLE FOR HIRE
+
+            </a>
+
+
+        </div>
+
+    </section>
 
 
 
-<!-- Gallery -->
+    <!-- ================= GALLERY ================= -->
+
+    <section
+        id="gallery"
+        class="gallery-section"
+    >
+
+        <div class="container-fluid px-3">
 
 
-<section class="gallery">
+            <div class="row g-4">
 
 
-    <div class="card">
+                <!-- Image 1 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img1.jpg"
+                            class="img-fluid w-100"
+                            alt="Tree"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
-        <img src="images/photo1.jpg">
+
+                <!-- Image 2 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img2.jfif"
+                            class="img-fluid w-100"
+                            alt="Landscape"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
-        <div class="overlay">
 
-            Nature
+                <!-- Image 3 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img3.jfif"
+                            class="img-fluid w-100"
+                            alt="Green landscape"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Image 4 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img4.jfif"
+                            class="img-fluid w-100"
+                            alt="Beach"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Image 5 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img5.jfif"
+                            class="img-fluid w-100"
+                            alt="River"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Image 6 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img6.jfif"
+                            class="img-fluid w-100"
+                            alt="Mountain"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Image 7 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img7.jfif"
+                            class="img-fluid w-100"
+                            alt="Green field"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Image 8 -->
+
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="img8.jfif"
+                            class="img-fluid w-100"
+                            alt="Moon"
+                        >
+
+                        <div class="gallery-overlay">
+
+                            <i class="bi bi-arrows-angle-expand"></i>
+
+                            <i class="bi bi-link-45deg"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer
+        id="contact"
+        class="text-center"
+    >
+
+
+        <p class="mb-4">
+
+            © Copyright
+
+            <strong>
+                PhotoFolio
+            </strong>
+
+            All Rights Reserved
+
+        </p>
+
+
+
+        <div
+            class="footer-social d-flex justify-content-center gap-3 mb-3"
+        >
+
+            <a href="#">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-linkedin"></i>
+            </a>
 
         </div>
 
 
-    </div>
 
+        <p>
 
+            Designed by
 
+            <span class="text-success">
+                BootstrapMade
+            </span>
 
-    <div class="card">
+        </p>
 
 
-        <img src="images/photo2.jpg">
+    </footer>
 
 
-        <div class="overlay">
 
-            Mountains
+    <!-- Bootstrap JavaScript -->
 
-        </div>
-
-
-    </div>
-
-
-
-
-
-    <div class="card">
-
-
-        <img src="images/photo3.jpg">
-
-
-        <div class="overlay">
-
-            Wildlife
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-    <div class="card">
-
-
-        <img src="images/photo4.jpg">
-
-
-        <div class="overlay">
-
-            City
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-    <div class="card">
-
-
-        <img src="images/photo5.jpg">
-
-
-        <div class="overlay">
-
-            Portrait
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-    <div class="card">
-
-
-        <img src="images/photo6.jpg">
-
-
-        <div class="overlay">
-
-            Travel
-
-        </div>
-
-
-    </div>
-
-
-
-</section>
-
-
-
-
-
-<!-- About section -->
-
-
-<section class="about">
-
-
-    <h2>
-        About Me
-    </h2>
-
-
-    <p>
-
-        Photography is the art of freezing special moments.
-        I capture emotions, places and stories.
-
-    </p>
-
-
-</section>
-
-
-
-
-
-
-<!-- Footer -->
-
-
-<footer>
-
-
-    <h3>
-        PhotoFolio
-    </h3>
-
-
-    <p>
-        © 2026 All Rights Reserved
-    </p>
-
-
-</footer>
-
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
 
 </body>
